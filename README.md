@@ -16,9 +16,9 @@ Container Management: Learn how to start, stop, and manage Redis containers effe
 
 ## Prerequisites
 
-Docker: Ensure Docker is installed and running on your system. Docker Installation Guide
+Docker: Ensure Docker is installed and running on your system. 
 
-Optional: Install docker-compose for easier multi-container management. Docker Compose Installation Guide
+Optional: Install docker-compose for easier multi-container management. 
 
 ## Steps to Set Up Redis with Docker
 
