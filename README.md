@@ -141,7 +141,7 @@ Command:
 
 docker ps -a
 
-Bonus: Using Docker Compose
+## 9. Bonus: Using Docker Compose
 
 You can also use docker-compose to simplify the Redis container setup. Create a docker-compose.yml file with the following content:
 
