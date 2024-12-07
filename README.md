@@ -144,7 +144,7 @@ In this project, I have covered the essentials, from running Redis in a containe
 
 ## Future Improvements
 
-1. Docker Networking:
+## 1. Docker Networking:
    
 Redis can be connected to other containers or services via Docker networks. This is especially important for multi-container setups or when Redis needs to interact with other services (e.g., a web server or a database).
 
@@ -154,7 +154,7 @@ docker network create redis-network
 
 docker run --name redis-container --network redis-network -d redis
 
-2. Redis Configuration
+## 2. Redis Configuration
    
 Redis allows configuring various options for production environments. For example, you can enable password protection and set specific memory limits:
 
@@ -162,7 +162,7 @@ Example:
 
 docker run -d --name redis-container -p 6379:6379 redis redis-server --requirepass "yourpassword"
 
-3. Docker Compose Example
+## 3. Docker Compose Example
    
 Docker Compose simplifies the deployment of Redis along with other services. Here's an example docker-compose.yml:
 
@@ -190,7 +190,7 @@ volumes:
   redis-data:
 
 
-4. Error Handling and Debugging
+## 4. Error Handling and Debugging
    
 It's useful to know how to troubleshoot common issues. If the Redis container fails to start, you can check its logs for any errors:
 
@@ -198,7 +198,7 @@ Example:
 
 docker logs redis-container
 
-5. Handling Data Persistence with Volumes
+## 5. Handling Data Persistence with Volumes
    
 To enable Redis persistence and ensure data is retained after container shutdowns, you can mount a volume to store Redis data on the host machine.
 
