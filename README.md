@@ -131,7 +131,8 @@ Command:
 Command:
 
 ## docker run -it --rm --name redis-container -p
- 6379:6379 redis redis-server --appendonly yes
+
+## 6379:6379 redis redis-server --appendonly yes
 
 
 ## Conclusion
