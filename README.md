@@ -28,7 +28,7 @@ Download the latest Redis image from Docker Hub.
 
 Command:
 
-docker pull redis
+## docker pull redis
 
 Explanation:
 
@@ -40,7 +40,7 @@ Start a Redis container in detached mode.
 
 Command:
 
-docker run --name redis-container -d redis
+## docker run --name redis-container -d redis
 
 Explanation:
 
@@ -54,7 +54,7 @@ Check if the Redis container is running.
 
 Command:
 
-docker ps
+## docker ps
 
 Expected Output:
 
@@ -70,7 +70,7 @@ Connect to the Redis CLI to interact with the database.
 Command:
 
 
-docker exec -it redis-container redis-cli
+## docker exec -it redis-container redis-cli
 
 Expected Output:
 
@@ -80,24 +80,24 @@ Example Commands in Redis CLI:
 
 PING Command: Test the connection.
 
-127.0.0.1:6379> PING
+## 127.0.0.1:6379> PING
 
 PONG
 
 Set and Get Values:
 
-127.0.0.1:6379> SET key "value"
+## 127.0.0.1:6379> SET key "value"
 
 OK
 
-127.0.0.1:6379> GET key
+## 127.0.0.1:6379> GET key
 
 "value"
 
 To exit the Redis CLI, type:
 
 
-127.0.0.1:6379> exit
+## 127.0.0.1:6379> exit
 
 ## 5. Run a Temporary Redis Container
 
@@ -105,7 +105,7 @@ If you need a temporary Redis CLI instance:
 
 Command:
 
-docker run --rm -it redis redis-cli
+## docker run --rm -it redis redis-cli
 
 Explanation:
 
@@ -119,7 +119,7 @@ To stop the Redis container:
 
 Command:
 
-docker stop redis-container
+## docker stop redis-container
 
 Expected Output:
 
@@ -131,7 +131,7 @@ redis-container
 To completely remove the container:
 
 
-docker rm redis-container
+## docker rm redis-container
 
 Expected Output:
 
@@ -143,7 +143,7 @@ To list all containers (active or inactive):
 
 Command:
 
-docker ps -a
+## docker ps -a
 
 
 ## Conclusion
