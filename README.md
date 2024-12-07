@@ -1,7 +1,9 @@
 # Redis Docker Setup and Usage
 
 ## Introduction
-Redis is an open-source, in-memory data structure store that can be used as a database, cache, and message broker. With its high performance and versatility, Redis is widely used in real-time applications, such as chat applications, gaming leaderboards, and caching.
+Redis is an open-source, in-memory data structure store that can be used as a database, cache, and message broker. With its high performance and versatility, 
+
+Redis is widely used in real-time applications, such as chat applications, gaming leaderboards, and caching.
 
 This project demonstrates how to deploy Redis as a containerized service using Docker, manage its data, and access its CLI for database operations.
 
@@ -79,6 +81,7 @@ Example Commands in Redis CLI:
 PING Command: Test the connection.
 
 127.0.0.1:6379> PING
+
 PONG
 
 Set and Get Values:
@@ -107,6 +110,7 @@ docker run --rm -it redis redis-cli
 Explanation:
 
 --rm: Removes the container automatically after exiting.
+
 -it: Opens an interactive terminal session.
 
 ## 6. Stop the Redis Container
@@ -141,32 +145,11 @@ Command:
 
 docker ps -a
 
-## 9. Bonus: Using Docker Compose
-
-You can also use docker-compose to simplify the Redis container setup. Create a docker-compose.yml file with the following content:
-
-yaml
-
-version: '3.8'
-
-services:
-  redis:
-    image: redis:latest
-    container_name: redis-container
-    ports:
-      - "6379:6379"
-      
-Start the container with:
-
-
-docker-compose up -d
-
-Stop the container with:
-
-docker-compose down
 
 ## Conclusion
-This project demonstrates how to quickly set up and manage a Redis instance using Docker. Redis’s flexibility as a database, cache, and message broker makes it a vital tool for many real-time applications.
+This project demonstrates how to quickly set up and manage a Redis instance using Docker. 
+
+Redis’s flexibility as a database, cache, and message broker makes it a vital tool for many real-time applications.
 
 ## Future Improvements
 
@@ -180,6 +163,6 @@ Docker Compose: Automate Redis deployments in complex systems with docker-compos
 
 ## References
 
-Redis on Docker Hub
+https://hub.docker.com/_/redis
 
 Official Redis Documentation
