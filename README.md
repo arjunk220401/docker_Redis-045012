@@ -78,7 +78,7 @@ Expected Output:
 
 Example Commands in Redis CLI:
 
-PING Command: Test the connection.
+## PING Command: Test the connection.
 
 ## 127.0.0.1:6379> PING
 
@@ -99,51 +99,39 @@ To exit the Redis CLI, type:
 
 ## 127.0.0.1:6379> exit
 
-## 5. Run a Temporary Redis Container
 
-If you need a temporary Redis CLI instance:
 
-Command:
+## 5. Stop the Redis Container
 
-## docker run --rm -it redis redis-cli
-
-Explanation:
-
---rm: Removes the container automatically after exiting.
-
--it: Opens an interactive terminal session.
-
-## 6. Stop the Redis Container
-
-To stop the Redis container:
+If you need to stop the Redis Container:
 
 Command:
 
 ## docker stop redis-container
 
+
 Expected Output:
 
 
 redis-container
 
-## 7. Remove the Redis Container
+
+## 6. Remove the Redis Container
 
 To completely remove the container:
 
+Command:
 
 ## docker rm redis-container
 
-Expected Output:
 
-redis-container
+## 8. To start a Redis container using Docker and run the Redis server with persistent storage enabled.
 
-## 8. Verify All Containers
-
-To list all containers (active or inactive):
 
 Command:
 
-## docker ps -a
+## docker run -it --rm --name redis-container -p
+ 6379:6379 redis redis-server --appendonly yes
 
 
 ## Conclusion
