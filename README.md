@@ -1,7 +1,7 @@
 # Redis Docker Setup and Usage
 
 ## Introduction
-Redis is an open-source, in-memory data structure store that can be used as a database, cache, and message broker. With its high performance and versatility, 
+Redis is an open-source, in-memory data structure store that can be used as a database, cache, and message broker. With its high performance and versatility.
 
 Redis is widely used in real-time applications, such as chat applications, gaming leaderboards, and caching.
 
