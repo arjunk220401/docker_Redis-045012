@@ -184,9 +184,15 @@ This project demonstrates how to quickly set up and manage a Redis instance usin
 ## Future Improvements
 
 Data Persistence: Explore Redis persistence using volumes to store data outside the container.
+
 Clustering: Learn how to set up Redis clusters for scalability.
+
 Monitoring: Use tools like RedisInsight or Prometheus for monitoring Redis performance.
+
 Docker Compose: Automate Redis deployments in complex systems with docker-compose.
-References
+
+## References
+
 Redis on Docker Hub
+
 Official Redis Documentation
