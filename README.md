@@ -7,14 +7,21 @@ This project demonstrates how to deploy Redis as a containerized service using D
 
 ## Learning Objectives
 Docker: Learn how to deploy and manage Redis using Docker containers.
+
 Redis CLI: Understand how to interact with Redis using its command-line interface.
+
 Container Management: Learn how to start, stop, and manage Redis containers effectively.
-Prerequisites
+
+## Prerequisites
+
 Docker: Ensure Docker is installed and running on your system. Docker Installation Guide
+
 Optional: Install docker-compose for easier multi-container management. Docker Compose Installation Guide
 
 ## Steps to Set Up Redis with Docker
+
 1. Pull the Redis Docker Image
+   
 Download the latest Redis image from Docker Hub.
 
 Command:
@@ -25,40 +32,56 @@ docker pull redis
 Explanation:
 
 This command fetches the Redis image from the Docker repository.
+
 2. Run the Redis Container
+   
 Start a Redis container in detached mode.
 
 Command:
 
 bash
+
 Copy code
+
 docker run --name redis-container -d redis
+
 Explanation:
 
 --name redis-container: Names the container as "redis-container".
+
 -d: Runs the container in detached mode, so it operates in the background.
+
 3. Verify Running Containers
+   
 Check if the Redis container is running.
 
 Command:
 
 bash
+
 Copy code
+
 docker ps
+
 Expected Output:
 
-plaintext
-Copy code
+
 CONTAINER ID   IMAGE    COMMAND               STATUS          PORTS   NAMES
+
 <container_id> redis    "docker-entrypoint…"  Up X seconds    ...     redis-container
+
 4. Access Redis CLI
+   
 Connect to the Redis CLI to interact with the database.
 
 Command:
 
 bash
+
 Copy code
+
 docker exec -it redis-container redis-cli
+
 Expected Output:
 
 plaintext
