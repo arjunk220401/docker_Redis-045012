@@ -136,6 +136,12 @@ Command:
 
 This command uses a named volume redis-data to store Redis data outside the container.
 
+Video for demonstration:
+
+
+https://github.com/user-attachments/assets/547ce4a9-ccf4-4bbf-8fef-3c76ed3c52fe
+
+
 ## Conclusion
 
 With Docker, Redis is easy to set up and manage.
